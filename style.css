@@ -1,0 +1,72 @@
+* {
+  rembourrage :  0 ;
+  marge :  0 ;
+  box-sizing : border-box;
+}
+
+corps {
+  largeur max :  100 vw ;
+  hauteur :  100 vh ;
+  affichage : flexible ;
+  justifier-contenu : center;
+  align-items : center;
+  font-family : sans-serif;
+  background-image :  linear-gradient (vers le haut ,  # a18cd1  0 % ,  # fbc2eb  100 % );
+}
+
+. calculatrice {
+  couleur de fond :  # 222222 ;
+  affichage : flexible ;
+  flex-direction : colonne ;
+  rembourrage :  15 px ;
+  rayon de bordure :  5 px ;
+  box-shadow :  0  5 px noir;
+}
+
+. ecran {
+  largeur :  100 % ;
+  hauteur :  100 px ;
+  couleur de fond :  rvb ( 198 ,  237 ,  255 );
+  marge-bas :  10 px ;
+  rayon de bordure :  5 px ;
+  affichage : flexible ;
+  justifier-contenu : flex-end;
+  align-items : flex-end;
+  rembourrage :  5 px ;
+  taille de police :  25 px ;
+}
+
+. touche {
+  affichage : grille ;
+  grid-template-columns :  répétition ( 4 ,  50 px );
+  grid-template-rows :  répétition ( 5 ,  50 px );
+  grille-gap :  7 px ;
+}
+
+bouton {
+  bordure : aucune ;
+  contour : aucun;
+  rayon de bordure :  5 px ;
+  couleur de fond :  # f7f7f7 ;
+  boîte-ombre :  0  3 px  # a8a8a8 ;
+  taille de police :  18 px ;
+}
+
+bouton : actif {
+  boîte-ombre :  0  1 px  # a8a8a8 ;
+  transformer :  translateY ( 2 px );
+}
+
+bouton [ clé de données = "8" ] {
+  couleur de fond :  # ff9900 ;
+  font-weight : gras;
+  couleur : blanc;
+}
+
+bouton [ clé de données = "13" ] {
+  grille-colonne : span 2 ;
+  couleur de fond :  # 36e700 ;
+  font-weight : gras;
+  couleur : blanc;
+  taille de police :  35 px ;
+}
